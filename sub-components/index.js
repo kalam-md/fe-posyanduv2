@@ -18,6 +18,15 @@ import IbuHamilCatatPengukuran from 'sub-components/ibu-hamil/IbuHamilCatatPengu
 import IbuHamilMeninggal from 'sub-components/ibu-hamil/IbuHamilMeninggal';
 import IbuHamilRiwayatPengukuran from 'sub-components/ibu-hamil/IbuHamilRiwayatPengukuran';
 
+// sub components for /pages/wuspus;
+import WuspusTable from 'sub-components/wuspus/WuspusTable';
+import WuspusFormCreate from 'sub-components/wuspus/WuspusFormCreate';
+import WuspusFormEdit from 'sub-components/wuspus/WuspusFormEdit';
+import WuspusFormDetail from 'sub-components/wuspus/WuspusFormDetail';
+import WuspusCatatPengukuran from 'sub-components/wuspus/WuspusCatatPengukuran';
+import WuspusMeninggal from 'sub-components/wuspus/WuspusMeninggal';
+import WuspusRiwayatPengukuran from 'sub-components/wuspus/WuspusRiwayatPengukuran';
+
 // sub components for /pages/posyandu;
 import PosyanduTable from 'sub-components/posyandu/PosyanduTable';
 import PosyanduFormCreate from 'sub-components/posyandu/PosyanduFormCreate';
@@ -41,6 +50,14 @@ export {
    IbuHamilCatatPengukuran,
    IbuHamilMeninggal,
    IbuHamilRiwayatPengukuran,
+
+   WuspusTable,
+   WuspusFormCreate, 
+   WuspusFormEdit, 
+   WuspusFormDetail,
+   WuspusCatatPengukuran,
+   WuspusMeninggal,
+   WuspusRiwayatPengukuran,
 
    PosyanduTable,
    PosyanduFormCreate

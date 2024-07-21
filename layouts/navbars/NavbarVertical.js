@@ -98,10 +98,10 @@ const NavbarVertical = (props) => {
 		<Fragment>
 			<SimpleBar style={{ maxHeight: '100vh' }}>
 				<div className="nav-scroller">
-					<Link href="/" className="navbar-brand">
-						<Image src="/images/brand/logo/logo.svg" alt="" />
+					<Link href="/" className="navbar-brand text-white">
+						<h4 className='text-white text-center'>Posyandu Kader</h4>
 					</Link>
-				</div>				
+				</div>	
 				{/* Dashboard Menu */}
 				<Accordion defaultActiveKey="0" as="ul" className="navbar-nav flex-column">
 					{DashboardMenu.map(function (menu, index) {

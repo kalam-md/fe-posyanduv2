@@ -17,16 +17,15 @@ const SignIn = () => {
           {/* Card body */}
           <Card.Body className="p-6">
             <div className="mb-4">
-              <Link href="/"><Image src="/images/brand/logo/logo-primary.svg" className="mb-2" alt="" /></Link>
-              <p className="mb-6">Please enter your user information.</p>
+              <h1 className='text-center'>Posyandu Kader Login</h1>
             </div>
             {/* Form */}
             {hasMounted &&
               <Form>
                 {/* Username */}
                 <Form.Group className="mb-3" controlId="username">
-                  <Form.Label>Username or email</Form.Label>
-                  <Form.Control type="email" name="username" placeholder="Enter address here" required="" />
+                  <Form.Label>No Telepon</Form.Label>
+                  <Form.Control type="email" name="username" placeholder="Masukan nomor telepon" required="" />
                 </Form.Group>
 
                 {/* Password */}
@@ -44,15 +43,12 @@ const SignIn = () => {
                 </div>
                 <div>
                   {/* Button */}
-                  <div className="d-grid">
-                    <Button variant="primary" type="submit">Sign In</Button>
-                  </div>
+                  <Link href={"/"} className="d-grid">
+                    <Button variant="primary" type="submit">Masuk</Button>
+                  </Link>
                   <div className="d-md-flex justify-content-between mt-4">
                     <div className="mb-2 mb-md-0">
-                      <Link href="/authentication/sign-up" className="fs-5">Create An Account </Link>
-                    </div>
-                    <div>
-                      <Link href="/authentication/forget-password" className="text-inherit fs-5">Forgot your password?</Link>
+                      <Link href="/authentication/sign-up" className="fs-5">Registrasi Akun </Link>
                     </div>
                   </div>
                 </div>
