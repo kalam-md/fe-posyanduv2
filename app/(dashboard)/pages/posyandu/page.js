@@ -16,6 +16,7 @@ const Posyandu = () => {
       <PageHeading heading="Data Kegiatan Posyandu" />
 
       <Link href="posyandu/create" className="btn btn-primary mb-4">Tambah Data Kegiatan Posyandu</Link>
+      <Link href="https://docs.google.com/spreadsheets/d/17pVZt_gAQduf-Yrw8RfQH7Mrie_r-5fZ/edit?usp=sharing&ouid=101531279147380432130&rtpof=true&sd=true" className="btn btn-success mb-4 ms-3" target="_blank">Download Laporan</Link>
 
       <PosyanduTable />
 

@@ -14,9 +14,6 @@ import {
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 
-// import data files
-import NotificationList from 'data/Notification';
-
 // import hooks
 import useMounted from 'hooks/useMounted';
 
@@ -27,29 +24,6 @@ const QuickMenu = () => {
     const isDesktop = useMediaQuery({
         query: '(min-width: 1224px)'
     })
-
-    const Notifications = () => {
-        return (
-            <SimpleBar style={{ maxHeight: '300px' }}>
-                <ListGroup variant="flush">
-                    {NotificationList.map(function (item, index) {
-                        return (
-                            <ListGroup.Item className={index === 0 ? 'bg-light' : ''} key={index}>
-                                <Row>
-                                    <Col>
-                                        <Link href="#" className="text-muted">
-                                            <h5 className=" mb-1">{item.sender}</h5>
-                                            <p className="mb-0"> {item.message}</p>
-                                        </Link>
-                                    </Col>
-                                </Row>
-                            </ListGroup.Item>
-                        );
-                    })}
-                </ListGroup>
-            </SimpleBar>
-        );
-    }
 
     const QuickMenuDesktop = () => {
         return (
@@ -73,7 +47,7 @@ const QuickMenu = () => {
                     <Dropdown.Item as="div" className="px-4 pb-0 pt-2" bsPrefix=' '>
                             <div className="lh-1 ">
                                 <h5 className="mb-1"> Kalam Mahardhika</h5>
-                                <Link href="#" className="text-inherit fs-6">View my profile</Link>
+                                <Link href="#" className="text-inherit fs-6">Lihat profile</Link>
                             </div>
                             <div className=" dropdown-divider mt-3 mb-2"></div>
                     </Dropdown.Item>

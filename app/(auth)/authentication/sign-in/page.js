@@ -24,8 +24,8 @@ const SignIn = () => {
               <Form>
                 {/* Username */}
                 <Form.Group className="mb-3" controlId="username">
-                  <Form.Label>No Telepon</Form.Label>
-                  <Form.Control type="email" name="username" placeholder="Masukan nomor telepon" required="" />
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" name="email" placeholder="Masukan email" required="" />
                 </Form.Group>
 
                 {/* Password */}
